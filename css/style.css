@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+}
+/* Adding the background at the top-left and bottom-right*/
+
+body::before {
+  content: "";
+  width: 40%;
+  height: 25rem;
+  background: url("../images/bg-pattern-top.svg") no-repeat;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+body::after {
+  content: "";
+  width: 40%;
+  height: 25rem;
+  background: url("../images/bg-pattern-bottom.svg") no-repeat;
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+main {
+  width: 19.5rem;
+  height: 20.8rem;
+  background: white;
+  border-radius: 0.9rem;
+}
+/* The card background color by pseudo selectors!*/
+
+.user-image::before {
+  content: " ";
+  width: 100%;
+  height: 7.8rem;
+  background: url("../images/bg-pattern-card.svg");
+  display: block;
+  border-radius: 0.9rem 0.9rem 0 0;
+}
+#victor {
+  display: block;
+  margin: -3rem auto auto auto;
+  width: 5.9rem;
+  border: 6px solid white;
+  border-radius: 100px;
+}
+.big-texts {
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+  text-align: center;
+}
+.norm-texts {
+  font-size: 16px;
+  color: hsl(227, 10%, 46%);
+  text-align: center;
+}
+#name {
+  margin-top: 1rem;
+}
+.age {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 2px;
+}
+.city{
+  margin-top: 0.3rem;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+hr{
+  margin-top: 1.5rem;
+  border-top:0;
+  color: hsl(0, 0%, 59%);
+ 
+
+}
+.stats{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.2rem 0.9rem;
+}
+
+.stat p{
+  font-size: 0.8rem;
+}
+.attribution {
+  position: absolute;
+top: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+  font-size: 0.9rem;
+}
